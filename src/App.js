@@ -8,7 +8,10 @@ import img5 from "./image 5.png";
 import mbtoken from "./mbtoken.svg";
 import metamask from "./metamask.svg";
 import opensea from "./opensea.svg";
-import house1 from "./house1.png";
+import house1 from "./Frame 143.png";
+import house2 from "./frame144.png";
+import house3 from "./frame145.png";
+import stars from './stars.png'
 import { Routes, Route, Link } from "react-router-dom";
 export default function App() {
   return (
@@ -78,9 +81,13 @@ export default function App() {
 
       <h1 className="inspira">Inspiration for your next adventure</h1>
       <div className="card-container">
-        <div className="my-card"></div>
+
         <img src={house1} />
-        <ul className="info1"></ul>
+        <img src={house3} />
+        <img src={house2} />
+
+
+
       </div>
     </div>
   );
