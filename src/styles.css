@@ -237,6 +237,8 @@ li a {
   background: #1d1d1e;
   color: white;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .ft-left {
   width: 35%;
@@ -270,4 +272,14 @@ li a {
 }
 .meta-white {
   margin-bottom: 70px;
+}
+.locations {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-right: 14px;
+}
+.locations span {
+  padding-top: 11px;
 }
