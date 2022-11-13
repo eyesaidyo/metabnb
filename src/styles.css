@@ -233,4 +233,38 @@ li a {
 .footer {
   background: #1d1d1e;
   color: white;
+  display: flex;
+}
+.ft-left {
+  width: 35%;
+  padding-left: 5%;
+  padding-top: 50px;
+}
+.ft-right {
+  width: 65%;
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  padding-right: 180px;
+}
+.ft-right ul {
+  display: flex;
+  flex-direction: column;
+}
+.list-head {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.list-item {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.socials {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+.meta-white {
+  margin-bottom: 70px;
 }
