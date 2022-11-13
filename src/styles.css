@@ -230,6 +230,9 @@ li a {
   padding: 10px;
   width: 156px;
 }
+.btn-learn:hover {
+  cursor: pointer;
+}
 .footer {
   background: #1d1d1e;
   color: white;
