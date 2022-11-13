@@ -1,7 +1,7 @@
 import home from "../logo.svg";
 import meta from "../meta.svg";
-
-import { Outlet } from "react-router-dom";
+import { Footer } from "./Footer";
+import { Outlet, Link } from "react-router-dom";
 export const Nav = () => {
   return (
     <div>
@@ -13,10 +13,10 @@ export const Nav = () => {
         <nav className="nav">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">Place to stay</a>
+              <Link to="/place-to-stay">Place to stay</Link>
             </li>
             <li>
               <a href="#">NFTs</a>
@@ -29,6 +29,7 @@ export const Nav = () => {
         <button className="connect-btn">Connect wallet</button>
       </header>
       <Outlet />
+      <Footer />
     </div>
   );
 };
