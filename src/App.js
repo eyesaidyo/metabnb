@@ -11,7 +11,17 @@ import opensea from "./opensea.svg";
 import house1 from "./Frame 143.png";
 import house2 from "./frame144.png";
 import house3 from "./frame145.png";
-import stars from './stars.png'
+import house4 from "./frame146.png";
+import house5 from "./frame147.png";
+import house6 from "./frame148.png";
+import house7 from "./frame149.png";
+import house8 from "./frame150.png";
+import nfts1 from "./nfts1.png";
+import m from "./meta-white.svg";
+import facebook from './facebook.svg';
+import insta from './insta.svg';
+import twitter from './twitter.svg';
+import copy from './copy.svg';
 import { Routes, Route, Link } from "react-router-dom";
 export default function App() {
   return (
@@ -81,13 +91,42 @@ export default function App() {
 
       <h1 className="inspira">Inspiration for your next adventure</h1>
       <div className="card-container">
-
         <img src={house1} />
         <img src={house3} />
         <img src={house2} />
-
-
-
+        <img src={house4} />
+        <img src={house5} />
+        <img src={house6} />
+        <img src={house7} />
+        <img src={house8} />
+      </div>
+      <div className="nft">
+        <div className="left">
+          <h1>Metabnb NFTs</h1>
+          <p>
+            Metabnb NFTs Discover our NFT gift cards collection. Loyal customers
+            gets amazing gift cards which are traded as NFTs. These NFTs gives
+            our cutomer access to loads of our exclusive services.
+          </p>
+          <button className="btn-learn">Learn more</button>
+        </div>
+        <div className="right">
+          <img className="nft-img" src={nfts1} />
+        </div>
+      </div>
+      <div className="footer">
+        <div className="ft-left">
+          <img alt="metabnb" src={m} />
+          <div className='socials'>
+            <img alt='facebook' src={facebook}/>
+            <img alt='instagram' src={insta} />
+            <img alt='twitter' src={twitter} />
+          </div>
+          <div className='copyright'>
+            <p><img alt='copyright' src={copy}/>2022 Metabnb</p>
+          </div>
+        </div>
+        <div className="ft-right"></div>
       </div>
     </div>
   );

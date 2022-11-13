@@ -79,7 +79,7 @@
 }
 .bolden {
   color: #a02279;
-  font-weight: 500;
+  font-weight: bold;
 }
 .hdr {
   display: flex;
@@ -164,23 +164,73 @@ li a {
 }
 .inspira {
   text-align: center;
-  margin-top: 40px;
+  margin: 60px 0;
+  font-weight: bold;
 }
-.card-container{
+.card-container {
   display: flex;
+  gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0 5%;
+  padding-bottom: 80px;
 }
 .my-card {
   border: 1px solid;
-  width:auto;
+  width: auto;
   border-radius: 20px;
   padding: 15px 0;
 }
-.info1{
+.info1 {
   text-align: left;
   display: flex;
   flex-direction: column;
 }
-.card-img{
+.card-img {
   margin: 0 5%;
+}
+.nft {
+  margin: 0;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+.left {
+  width: 40%;
+}
+.left h1 {
+  margin-left: 15%;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.left p {
+  margin-left: 15%;
+}
+.left button {
+  margin-left: 15%;
+}
+.right {
+  width: 60%;
+  justify-content: right;
+  margin-top: 100px;
+}
+.nft-img {
+  width: 60%;
+  margin-left: 200px;
+}
+.btn-learn {
+  color: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+  border-radius: 8px;
+  border: 1px solid #a02279;
+  background: white;
+  padding: 10px;
+  width: 156px;
+}
+.footer {
+  background: #1d1d1e;
+  color: white;
 }
