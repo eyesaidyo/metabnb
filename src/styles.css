@@ -18,17 +18,7 @@
 .main-a {
   width: 50%;
 }
-@media (max-width: 800px) {
-  .main {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-  }
-  .pics {
-    /* border: 2px solid red; */
-    display: none;
-  }
-}
+
 .pics {
   /* border: 2px solid black; */
   display: flex;
@@ -130,30 +120,7 @@ li a {
   margin-bottom: 10px;
   width: 100%;
 }
-@media (max-width: 800px) {
-  .main-a {
-    /* border: 1px solid red; */
-    display: block;
-    text-align: center;
-    margin: auto;
-    width: 95%;
-    font-size: 2rem;
-  }
-  .pics {
-    /* border: 2px solid red; */
-    display: none;
-  }
-  .connect-btn {
-    width: 10%;
-  }
-  .main-heading {
-    font-size: 2rem;
-    width: 95%;
-  }
-  .search {
-    font-size: 0.8rem;
-  }
-}
+
 .connect-btn {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
   border-radius: 7px;
@@ -238,7 +205,7 @@ li a {
   color: white;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 .ft-left {
   width: 35%;
@@ -282,4 +249,105 @@ li a {
 }
 .locations span {
   padding-top: 11px;
+}
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  text-align: center;
+  justify-content: center;
+  overflow: visible;
+  /* animation: drop 2s ease-in; */
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  overflow: hidden;
+  top: -250px;
+  left: 0;
+}
+#hamburger {
+  display: none;
+}
+.sample-card {
+  border: 1px solid;
+  border-radius: 13px;
+  padding: 11px 11px 45px;
+  font-size: 0.7rem;
+}
+.card-left {
+  display: inline;
+  width: 40%;
+}
+.card-right {
+  display: inline;
+  width: 60%;
+}
+.rights {
+  text-align: right;
+}
+.bottom-half {
+  display: flex;
+}
+.heart {
+  z-index: 3000;
+  margin-top: 10px;
+  position: absolute;
+  right: 120px;
+  opacity: 0.2;
+}
+@media (max-width: 800px) {
+  .m-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-a {
+    /* border: 1px solid red; */
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    font-size: 2rem;
+  }
+  .pics {
+    /* border: 2px solid red; */
+    display: none;
+  }
+  .connect-btn {
+    width: 10%;
+  }
+  .main-heading {
+    font-size: 2rem;
+    width: 95%;
+  }
+  .search {
+    font-size: 0.8rem;
+  }
+  .footer {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .ft-right {
+    display: block;
+    width: 100vw;
+  }
+  .ft-left {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10%;
+  }
+  .meta-white {
+    width: 60vw;
+  }
+  .nav,
+  .connect-btn {
+    display: none;
+  }
+  #hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container {
+    justify-content: center;
+  }
 }

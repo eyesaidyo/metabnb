@@ -15,6 +15,7 @@ import house14 from "../img14.png";
 import house15 from "../img15.png";
 import house16 from "../img16.png";
 import loc from "../location.svg";
+import { Card } from "./Card";
 export const PlaceToStay = () => {
   return (
     <>
@@ -30,6 +31,7 @@ export const PlaceToStay = () => {
         <img alt="sort" src={loc} />
       </div>
       <div className="card-container">
+        <Card />
         <img src={house5} />
         <img src={house6} />
         <img src={house7} />
