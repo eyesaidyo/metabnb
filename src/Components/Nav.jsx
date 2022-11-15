@@ -44,7 +44,7 @@ export const Nav = () => {
         </nav>
         <button className="connect-btn">Connect wallet</button>
       </header>
-      <nav style={drop} className="nav-mobile">
+      <div style={drop} className="nav-mobile">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -59,7 +59,8 @@ export const Nav = () => {
             <a href="#">Community</a>
           </li>
         </ul>
-      </nav>
+        <button className="connect-btn">Connect wallet</button>
+      </div>
       <Outlet />
       <Footer />
     </div>

@@ -1,10 +1,10 @@
-import pic from "./sample.svg";
 import heart from "./heart.svg";
-export const Card = () => {
+import star from "./star.svg";
+export const Card = (props) => {
   return (
     <div className="sample-card">
       {/* <div className="pic-div"> */}
-      <img className="pic" src={pic} />
+      <img className="pic" src={props.pic} />
       <img className="heart" src={heart} />
       {/* </div> */}
       <div className="bottom-half">
@@ -12,7 +12,13 @@ export const Card = () => {
           <p className="lefts">Desert King</p>
 
           <p className="lefts">2345km away</p>
-          <p className="lefts">stars</p>
+          <p className="lefts">
+            <img src={star} />
+            <img src={star} />
+            <img src={star} />
+            <img src={star} />
+            <img src={star} />
+          </p>
         </div>
         <div className="card-right">
           <p className="rights">

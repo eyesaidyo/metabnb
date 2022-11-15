@@ -1,22 +1,40 @@
-import house1 from "../Frame 143.png";
-import house2 from "../frame144.png";
-import house3 from "../frame145.png";
-import house4 from "../frame146.png";
-import house5 from "../frame147.png";
-import house6 from "../frame148.png";
-import house7 from "../frame149.png";
-import house8 from "../frame150.png";
-import house9 from "../img9.png";
-import house10 from "../img10.png";
-import house11 from "../img11.png";
-import house12 from "../img12.png";
-import house13 from "../img13.png";
-import house14 from "../img14.png";
-import house15 from "../img15.png";
-import house16 from "../img16.png";
+import pic1 from "./pic1.svg";
+import pic0 from "./pic0.svg";
+import pic2 from "./pic2.svg";
+import pic3 from "./pic3.svg";
+import pic4 from "./pic4.svg";
+import pic5 from "./pic5.svg";
+import pic6 from "./pic6.svg";
+import pic7 from "./pic7.svg";
+import pic8 from "./pic8.svg";
+import pic9 from "./pic9.svg";
+import pic10 from "./pic10.svg";
+import pic11 from "./pic11.svg";
+import pic12 from "./pic12.svg";
+import pic13 from "./pic13.svg";
+import pic14 from "./pic14.svg";
+import pic15 from "./pic15.svg";
 import loc from "../location.svg";
 import { Card } from "./Card";
 export const PlaceToStay = () => {
+  const pics = [
+    pic0,
+    pic1,
+    pic2,
+    pic3,
+    pic4,
+    pic5,
+    pic6,
+    pic7,
+    pic8,
+    pic9,
+    pic10,
+    pic11,
+    pic12,
+    pic13,
+    pic14,
+    pic15,
+  ];
   return (
     <>
       <div className="locations">
@@ -28,26 +46,12 @@ export const PlaceToStay = () => {
         <span>Cabins</span>
         <span>Off-grid</span>
         <span>Farms</span>
-        <img alt="sort" src={loc} />
+        <img className="sort" alt="sort" src={loc} />
       </div>
       <div className="card-container">
-        <Card />
-        <img src={house5} />
-        <img src={house6} />
-        <img src={house7} />
-        <img src={house8} />
-        <img src={house1} />
-        <img src={house3} />
-        <img src={house2} />
-        <img src={house4} />
-        <img src={house9} />
-        <img src={house10} />
-        <img src={house11} />
-        <img src={house12} />
-        <img src={house13} />
-        <img src={house14} />
-        <img src={house15} />
-        <img src={house16} />
+        {pics.map((pic) => (
+          <Card pic={pic} />
+        ))}
       </div>
     </>
   );
