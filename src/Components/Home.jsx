@@ -5,16 +5,18 @@ import img5 from "../image 5.png";
 import mbtoken from "../mbtoken.svg";
 import metamask from "../metamask.svg";
 import opensea from "../opensea.svg";
-import house1 from "../Frame 143.png";
-import house2 from "../frame144.png";
-import house3 from "../frame145.png";
-import house4 from "../frame146.png";
-import house5 from "../frame147.png";
-import house6 from "../frame148.png";
-import house7 from "../frame149.png";
-import house8 from "../frame150.png";
+import pic1 from "./pic1.svg";
+import pic0 from "./pic0.svg";
+import pic2 from "./pic2.svg";
+import pic3 from "./pic3.svg";
+import pic4 from "./pic4.svg";
+import pic5 from "./pic5.svg";
+import pic6 from "./pic6.svg";
+import pic7 from "./pic7.svg";
 import nfts1 from "../nfts1.png";
+import { Card } from "./Card";
 export const Home = () => {
+  const pics = [pic4, pic5, pic6, pic7, pic0, pic1, pic2, pic3];
   return (
     <>
       <div className="main">
@@ -59,14 +61,9 @@ export const Home = () => {
 
       <h1 className="inspira">Inspiration for your next adventure</h1>
       <div className="card-container">
-        <img src={house1} />
-        <img src={house3} />
-        <img src={house2} />
-        <img src={house4} />
-        <img src={house5} />
-        <img src={house6} />
-        <img src={house7} />
-        <img src={house8} />
+        {pics.map((card) => (
+          <Card pic={card} />
+        ))}
       </div>
       <div className="nft">
         <div className="left">
@@ -82,7 +79,6 @@ export const Home = () => {
           <img className="nft-img" src={nfts1} />
         </div>
       </div>
-      
     </>
   );
 };
