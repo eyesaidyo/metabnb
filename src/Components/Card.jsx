@@ -3,17 +3,21 @@ import heart from "./heart.svg";
 export const Card = () => {
   return (
     <div className="sample-card">
-      <img src={pic} />
+      {/* <div className="pic-div"> */}
+      <img className="pic" src={pic} />
       <img className="heart" src={heart} />
+      {/* </div> */}
       <div className="bottom-half">
         <div className="card-left">
-          <p>Desert King</p>
+          <p className="lefts">Desert King</p>
 
-          <p>2345km away</p>
-          <p>stars</p>
+          <p className="lefts">2345km away</p>
+          <p className="lefts">stars</p>
         </div>
         <div className="card-right">
-          <p className="rights">1mbt per night</p>
+          <p className="rights">
+            <strong>1MBT per night</strong>
+          </p>
           <p className="rights">available for 2weeks stay</p>
         </div>
       </div>
