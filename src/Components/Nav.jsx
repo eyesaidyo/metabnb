@@ -3,7 +3,12 @@ import meta from "../meta.svg";
 import { Footer } from "./Footer";
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
+import { Modal } from "./Modal";
 export const Nav = () => {
+  const [modal, setModal]=useState(false)
+  const toggleModal=()=>{
+    setModal(!modal)
+  }
   let [drop, setDrop] = useState({ display: "none" });
   function handleClick() {
     setDrop((prev) =>
@@ -14,6 +19,9 @@ export const Nav = () => {
   }
   return (
     <div>
+      {
+        modal&&<Modal/>
+      }
       <header className="hdr">
         <div className="m-logo">
           <img alt="logo" src={home} />
@@ -42,7 +50,7 @@ export const Nav = () => {
             </li>
           </ul>
         </nav>
-        <button className="connect-btn">Connect wallet</button>
+        <button onClick={toggleModal} className="connect-btn">Connect wallet</button>
       </header>
       <div style={drop} className="nav-mobile">
         <ul>
@@ -61,8 +69,16 @@ export const Nav = () => {
         </ul>
         <button className="connect-btn">Connect wallet</button>
       </div>
+      
       <Outlet />
       <Footer />
+      <div className='modal'>
+        <div className='overlay'>
+          <div className='modal-content'>
+            <h2> hello world</h2>
+            </div>
+        </div>
+      </div>
     </div>
   );
 };
