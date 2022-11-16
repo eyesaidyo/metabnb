@@ -129,6 +129,15 @@ li a {
   padding: 10px;
   width: auto;
 }
+.connect-btn2 {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+  border-radius: 7px;
+  border: 1px solid #a02279;
+  color: white;
+  padding: 10px;
+  width: auto;
+  display: none;
+}
 .modal,
 .overlay {
   width: 100vw;
