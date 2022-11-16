@@ -5,8 +5,8 @@ import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 import { Modal } from "./Modal";
 export const Nav = () => {
-  const [modal, setModal]=useState(false)
-  const toggleModal=()=>{
+  const [modal, setModal] = useState(false)
+  const toggleModal = () => {
     setModal(!modal)
   }
   let [drop, setDrop] = useState({ display: "none" });
@@ -20,7 +20,7 @@ export const Nav = () => {
   return (
     <div>
       {
-        modal&&<Modal/>
+        modal && <Modal modal={toggleModal} />
       }
       <header className="hdr">
         <div className="m-logo">
@@ -67,16 +67,16 @@ export const Nav = () => {
             <a href="#">Community</a>
           </li>
         </ul>
-        <button className="connect-btn">Connect wallet</button>
+        <button onClick={toggleModal} className="connect-btn">Connect wallet</button>
       </div>
-      
+      <button onClick={toggleModal} className="connect-btn2">Connect wallet</button>
       <Outlet />
       <Footer />
       <div className='modal'>
         <div className='overlay'>
           <div className='modal-content'>
             <h2> hello world</h2>
-            </div>
+          </div>
         </div>
       </div>
     </div>
